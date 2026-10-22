@@ -3,6 +3,7 @@ export const profile = {
   title: 'DevOps Engineer | Site Reliability Engineer | Cloud Engineer',
   tagline: 'Building reliable infrastructure, automating operations, and solving complex production challenges.',
   location: 'Costa Rica',
+  youtube: { channelId: 'UCJLRzlLBtO6fx9XSEoXWqTA', url: 'https://www.youtube.com/@dixong.arayaarias9273' },
   portrait: { src: '/portrait-front.png', side: '/portrait-side.png', alt: 'Portrait of Dixon G. Araya Arias' },
   // Public contact details supplied by Dixon. Resume is served from public/.
   contact: { email: 'dixon.ar08@gmail.com', linkedin: 'https://www.linkedin.com/in/dixon-araya-devops/', github: 'https://github.com/TavoA2', resume: '/Dixon_Araya_Software_Engineer_DevOps_Cloud_CV.pdf' },
@@ -35,5 +36,3 @@ export const education = [
 
 // Hidden until Dixon supplies the actual website details.
 export const futureWebsite = { visible: false, title: '', description: '', url: '' };
-
-
