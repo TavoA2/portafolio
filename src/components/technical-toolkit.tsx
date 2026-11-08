@@ -11,6 +11,9 @@ const brandIcons: Readonly<Record<string, string>> = {
   Prometheus: 'prometheus', Nginx: 'nginx', Astro: 'astro',
   'Next.js': 'nextjs', React: 'react', TypeScript: 'typescript',
   'Tailwind CSS': 'tailwind',
+  Istio: 'istio', kind: 'kind', Kyverno: 'kyverno', Java: 'java',
+  Go: 'go', PostgreSQL: 'postgresql', 'HashiCorp Vault': 'vault',
+  Akeyless: 'akeyless', Venafi: 'venafi',
 };
 
 export function TechnicalToolkit() {

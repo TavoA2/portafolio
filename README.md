@@ -43,3 +43,5 @@ Front and side portraits are stored in public/portrait-front.png and public/port
 ## Windows compiler compatibility
 The dev and build scripts explicitly use --webpack. This allows Next.js to use its SWC WebAssembly fallback if the Windows native SWC binding cannot load. Run npm.cmd run dev and keep the terminal open. Type checking is available through npm.cmd run typecheck.
 
+
+The Toolkit displays brand assets from [Devicon](https://github.com/devicons/devicon), the [CNCF Landscape](https://github.com/cncf/landscape/tree/master/hosted_logos), [Akeyless](https://www.akeyless.io/), and the [Venafi integration for Splunk SOAR](https://github.com/splunk-soar-connectors/venafi). Product logos identify the respective technologies.
