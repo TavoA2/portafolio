@@ -92,3 +92,4 @@ p{text-wrap:pretty}
 .toolkit-text span{padding:6px 8px;border:1px solid var(--line);border-radius:4px;color:var(--muted)}
 @media(max-width:760px){.toolkit-band{grid-template-columns:1fr;gap:8px}.toolkit-icons{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .toolkit-group{margin-bottom:30px}.toolkit-group>h3{margin:0 0 8px;font-size:19px;font-weight:500}.toolkit-group>p{margin:0 0 16px;font-size:14px;line-height:1.6;color:var(--muted)}
+.toolkit-brand img[src$="/servicenow.png"]{width:min(100%,104px);height:38px;object-fit:contain}
