@@ -79,3 +79,16 @@ p{text-wrap:pretty}
  .focus-strip>div>span{gap:6px;font-size:var(--type-label)}
  .channel-copy{padding:22px}
 }
+
+/* Technical toolkit: original brand colors, grouped in rows. */
+.toolkit-bands{margin:0 0 22px;border-block:1px solid var(--line)}
+.toolkit-band{display:grid;grid-template-columns:160px minmax(0,1fr);gap:16px 22px;padding:18px 0}
+.toolkit-band+.toolkit-band{border-top:1px solid var(--line)}
+.toolkit-band h4{align-self:center;margin:0;font:700 11px/1.5 monospace;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.toolkit-icons{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none}
+.toolkit-icons li{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:85px;padding:6px 4px;text-align:center;color:var(--text);font-size:12px;line-height:1.35;overflow-wrap:anywhere}
+.toolkit-brand img{display:block;width:38px;height:38px;object-fit:contain}
+.toolkit-brand img[src$="/aws.svg"],.toolkit-brand img[src$="/github.svg"],.toolkit-brand img[src$="/flask.svg"]{background:#e8e8e5;border-radius:5px;padding:4px}
+.toolkit-text span{padding:6px 8px;border:1px solid var(--line);border-radius:4px;color:var(--muted)}
+@media(max-width:760px){.toolkit-band{grid-template-columns:1fr;gap:8px}.toolkit-icons{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.toolkit-group{margin-bottom:30px}.toolkit-group>h3{margin:0 0 8px;font-size:19px;font-weight:500}.toolkit-group>p{margin:0 0 16px;font-size:14px;line-height:1.6;color:var(--muted)}
