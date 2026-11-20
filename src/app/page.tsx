@@ -1,3 +1,4 @@
+import { Navigation } from '@/components/navigation';
 import { TechnicalToolkit } from '@/components/technical-toolkit';
 import { ContentSection } from '@/components/content-section';
 import { Portrait } from '@/components/portrait';
@@ -8,7 +9,7 @@ import { ResourceLink, SectionHeading } from '@/components/ui';
 export default function Home() {
   return <>
     <a className="skip-link" href="#main">Skip to content</a>
-    <header className="site-header"><nav className="nav shell" aria-label="Main navigation"><a className="wordmark" href="#home" aria-label="Dixon Araya home">da<span>.</span><span className="wordmark-label">ENGINEERING</span></a><div className="nav-links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Work</a><a href="#education">Education</a><a href="#content">Content</a></div><a className="nav-contact" href="#contact">Let’s connect <ArrowUpRight size={15}/></a></nav></header>
+    <Navigation/>
     <main id="main">
       <section id="home" className="hero shell">
         <div className="hero-copy"><p className="eyebrow"><span className="status-dot"/> COSTA RICA / OPEN TO REMOTE OPPORTUNITIES</p><p className="intro">Dixon G. Araya Arias</p><h1>DevOps engineer.<br/><span>Built for reliability.</span></h1><p className="role">DevOps Engineer <span>/</span> SRE <span>/</span> Cloud Engineer</p><p className="hero-description">{profile.tagline}</p><div className="hero-actions"><a className="button primary" href="#projects">Explore my work <ArrowUpRight size={18}/></a><a className="text-link" href="#contact">Get in touch <ArrowUpRight size={16}/></a></div><div className="hero-socials"><a href={profile.contact.github} target="_blank" rel="noopener noreferrer" aria-label="Dixon on GitHub"><Github size={17}/></a><a href={profile.contact.linkedin} target="_blank" rel="noopener noreferrer" aria-label="Dixon on LinkedIn"><Linkedin size={17}/></a><a href={profile.youtube.url} target="_blank" rel="noopener noreferrer" aria-label="Dixon on YouTube"><Youtube size={18}/></a><span>Code, connections & things to come.</span></div><div className="hero-footer"><span>5 years in IT</span><span>Computer Engineer</span><span><MapPin size={13}/> Costa Rica</span></div></div>

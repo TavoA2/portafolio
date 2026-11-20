@@ -93,3 +93,20 @@ p{text-wrap:pretty}
 @media(max-width:760px){.toolkit-band{grid-template-columns:1fr;gap:8px}.toolkit-icons{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .toolkit-group{margin-bottom:30px}.toolkit-group>h3{margin:0 0 8px;font-size:19px;font-weight:500}.toolkit-group>p{margin:0 0 16px;font-size:14px;line-height:1.6;color:var(--muted)}
 .toolkit-brand img[src$="/servicenow.png"]{width:min(100%,104px);height:38px;object-fit:contain}
+
+/* Responsive navigation: disclosure panel, not a modal. */
+.portfolio-header .navigation-panel{display:flex;align-items:center;gap:30px}
+.navigation-toggle{display:none}
+@media(max-width:760px){
+ .portfolio-header{position:sticky;top:0}
+ .portfolio-header .nav{position:relative;display:flex;flex-wrap:nowrap;justify-content:space-between;min-height:72px;height:72px;padding-block:0;gap:12px}
+ .portfolio-header .navigation-toggle{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;min-width:94px;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:transparent;color:var(--text);font:inherit;font-size:14px;cursor:pointer}
+ .navigation-toggle:hover{color:var(--accent);border-color:var(--accent)}
+ .navigation-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+ .portfolio-header .navigation-panel{display:none;position:absolute;top:100%;left:-20px;right:-20px;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 20px 20px;max-height:calc(100dvh - 72px);overflow-y:auto;box-shadow:0 14px 24px #0004}
+ .portfolio-header .navigation-panel[data-open="true"]{display:flex;flex-direction:column;align-items:stretch;gap:12px}
+ .portfolio-header .nav-links{display:flex;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:0;width:100%;order:initial}
+ .portfolio-header .nav-links a{min-height:48px;padding:10px 8px;font-size:16px;border-bottom:1px solid var(--line)}
+ .portfolio-header .nav-links a::after{display:none}
+ .portfolio-header .nav-contact{display:flex;justify-content:space-between;min-height:48px;padding:10px 8px;color:var(--accent);font-size:16px}
+}
